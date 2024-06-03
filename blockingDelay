@@ -47,7 +47,7 @@ function blockingDelay(
 
     switch (true) {
       case isInProgress:
-        console.log(`[${bar}] ${percentage}% ${inProgressMsg} ${secondsRemaining}s`);
+        console.log(`${bar} ${percentage}% ${inProgressMsg} ${secondsRemaining}s`);
         break;
 
       case isCompleted:
