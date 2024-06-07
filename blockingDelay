@@ -1,3 +1,5 @@
+// @require     https://raw.githubusercontent.com/trinatek/violentmonkey/main/blockingDelay
+
 "use strict";
 
 /**
