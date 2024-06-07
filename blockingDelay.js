@@ -1,4 +1,4 @@
-// @require     https://raw.githubusercontent.com/trinatek/violentmonkey/main/blockingDelay
+// @require     https://raw.githubusercontent.com/trinatek/violentmonkey/main/blockingDelay.js
 
 "use strict";
 
