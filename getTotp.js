@@ -1,4 +1,4 @@
-// @require     https://raw.githubusercontent.com/trinatek/violentmonkey/main/getTotp
+// @require     https://raw.githubusercontent.com/trinatek/violentmonkey/main/getTotp.js
 
 /**
  * Generates a TOTP code from a cleaned 2FA secret key using the specified hash type.
