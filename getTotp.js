@@ -9,7 +9,7 @@
  * @returns {Promise<string>} - The generated TOTP code.
  * @throws {Error} - Throws an error if TOTP generation fails.
  */
-async function getTotp(secretKey, hashAlgo = "SHA-1") {
+function getTotp(secretKey, hashAlgo = "SHA-1") {
   
   return generateTotp(secretKey, hashAlgo);
 
