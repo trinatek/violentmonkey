@@ -1,4 +1,4 @@
-// @require     https://raw.githubusercontent.com/trinatek/violentmonkey/main/getTotp.js
+// @require     https://raw.githubusercontent.com/trinatek/violentmonkey/main/generateTotp.js
 
 "use strict";
 
@@ -11,9 +11,9 @@
  * @returns {Promise<string>} - The generated TOTP code.
  * @throws {Error} - Throws an error if TOTP generation fails.
  */
-async function getTotp(secretKey, hashAlgo = "SHA-1") {
+async function generateTotp(secretKey, hashAlgo = "SHA-1") {
   
-  return generateTotp(secretKey, hashAlgo);
+  return getTotp(secretKey, hashAlgo);
 
   /**
    * @param {string} secretKey
@@ -22,7 +22,7 @@ async function getTotp(secretKey, hashAlgo = "SHA-1") {
    * @returns {Promise<string>}
    * @throws {Error}
    */
-  async function generateTotp(secretKey, hashAlgo) {
+  async function getTotp(secretKey, hashAlgo) {
     try {
       const time = getCurrentTimeStep();
       const key = convertBase32ToUint8Array(secretKey.replace(/\s+/g, ""));
