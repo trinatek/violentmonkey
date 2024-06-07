@@ -10,9 +10,6 @@
  * @throws {Error} - Throws an error if TOTP generation fails.
  */
 async function getTotp(secretKey, hashAlgo = "SHA-1") {
-  
-  return generateTotp(secretKey, hashAlgo);
-
   /**
    * @param {string} secretKey
    * @param {string} hashAlgo
@@ -174,4 +171,6 @@ async function getTotp(secretKey, hashAlgo = "SHA-1") {
       throw new Error(`Failed to generate OTP: ${error.message}`);
     }
   }
+  
+  return generateTotp(secretKey, hashAlgo);
 }
